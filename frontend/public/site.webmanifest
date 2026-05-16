@@ -1,0 +1,8 @@
+{
+  "name": "TaskFlow Team Task Manager",
+  "short_name": "TaskFlow",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fbfb",
+  "theme_color": "#0f9f8f"
+}
