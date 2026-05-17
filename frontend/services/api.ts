@@ -3,7 +3,9 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5000/api",
+  baseURL:
+    process.env.NEXT_PUBLIC_API_URL ??
+    "https://team-task-manager-backend-production-9d3f.up.railway.app/api",
   withCredentials: true
 });
 
