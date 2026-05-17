@@ -8,7 +8,9 @@ export function useSocket(projectId?: string) {
     if (typeof window === "undefined") return null;
     const token = localStorage.getItem("accessToken");
     if (!token) return null;
-    return io(process.env.NEXT_PUBLIC_SOCKET_URL ?? "http://localhost:5000", { auth: { token } });
+    return io(process.env.NEXT_PUBLIC_SOCKET_URL ?? "https://team-task-manager-backend-production-9d3f.up.railway.app", {
+  auth: { token }
+});
   }, []);
 
   useEffect(() => {
